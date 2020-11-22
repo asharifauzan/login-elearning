@@ -15,5 +15,5 @@ form.addEventListener('submit', function(e) {
       console.log(this.response);
     }
   }
-  xhr.send('email='+email.value+'&password='+password.value);
+  xhr.send('user_name='+email.value+'&userpass='+password.value);
 });
