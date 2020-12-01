@@ -1,0 +1,10 @@
+<script type="text/javascript">
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://188.166.210.205/elearning/api/example/users');
+  xhr.onreadystatechange = function() {
+    if(this.readyState == 4 && this.status == 200) {
+      console.log(this.response);
+    }
+  }
+  xhr.send();
+</script>
